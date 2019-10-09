@@ -1,0 +1,25 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitlab.com/profile-sevilla/iesvalleinclan/store-valleinclan/configuration-local.git
+          force-pull: true
+          clone-on-start: true
+          username: franvallano
+          password: _pbxvagMS3xZXWNrs4az
+          default-label: develop
+
+          repos:
+            local:
+              uri: https://gitlab.com/profile-sevilla/iesvalleinclan/store-valleinclan/configuration-local.git
+              force-pull: true
+              clone-on-start: true
+              username: franvallano
+              password: _pbxvagMS3xZXWNrs4az
+              label: develop
